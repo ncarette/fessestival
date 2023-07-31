@@ -1,0 +1,686 @@
+/* Fonts import */
+@font-face {
+    font-family: 'David';
+    src: url("fonts/david.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Estrella';
+    src: url("fonts/Estrella-Early.otf") format("opentype");
+}
+
+/* palette */
+.color-palette-white {
+    --color-palette-gray-900: #f996c4;
+    --color-palette-gray-800: #fff;
+    --color-palette-gray-800-transparent: hsla(0,0%,100%,0);
+    --color-palette-gray-700: #000000;
+    --color-palette-gray-700-transparent: rgba(232,233,236,0);
+    --color-palette-gray-600: #969999;
+    --color-palette-gray-500: #76797d;
+    --color-palette-gray-400: #f996c4;
+    --color-palette-gray-300: #000000;
+    --color-palette-gray-200: #fff;
+    --color-palette-gray-100: #f996c4;
+    --color-palette-white: #000000;
+}
+
+/* general sets */ 
+html, body {
+    font-family: 'David', sans-serif;
+    line-height: 1.75;}
+    @media (min-width: 768px) {
+        html, body {
+            cursor: url(../content/cursor-resized.png) 70 40, auto; } }
+body {
+    padding-top: 67px;}
+    @media (min-width: 1024px) {
+        body {
+            padding-top: 79.78px; } }
+
+/* main */
+main > div.max-w-7xl.mx-auto.pb-12.px-4 {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    max-width: none !important;}
+
+/* enleve tous les radius */
+div.rounded-lg {
+    border-radius: 0rem;}
+
+nav.bg-gray-800 > div.max-w-7xl {
+    max-width: none;
+    padding: 0rem 0rem;}
+
+/* header */
+nav.bg-gray-800 {
+    background: #000000;
+    color : #fff;
+    border-top: 2px solid #fff;
+    /*border-bottom: 2px solid #fff;*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 25;}
+    @media (min-width: 1024px) {
+        nav.bg-gray-800 {
+            padding: 0.4rem 0rem; } }
+    /* links in header (but login) */
+    nav.bg-gray-800 a {
+        color: #f996c4;
+        background: transparent;
+        font-size: 1rem;
+        transition: all 0.3s;}
+        nav.bg-gray-800 a:hover, nav.bg-gray-800 a:active, nav.bg-gray-800 a:focus {
+            color: #ffffff !important;
+            background: transparent;
+            transition: all 0.3s;}
+        nav.bg-gray-800 .items-baseline > a {
+            color: #fff;
+            background: transparent;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            transition: all 0.3s;}
+            nav.bg-gray-800 .items-baseline > a:hover, nav.bg-gray-800 .items-baseline > a:active, nav.bg-gray-800 .items-baseline > a:focus {
+                color: #f996c4 !important;
+                background: transparent;
+                transition: all 0.3s;}
+        /* links from sidebar*/
+        nav.bg-gray-800 a.block {
+            color: #fff;
+            background: transparent;
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            padding-top: 0rem;
+            padding-bottom: 0rem;
+            line-height: 1.25;
+            transition: all 0.3s;}
+            nav.bg-gray-800 a.block:hover, nav.bg-gray-800 a.block:active, nav.bg-gray-800 a.block:focus {
+                color: #f996c4 !important;
+                background: transparent;
+                transition: all 0.3s;}
+            @media (max-width: 640px) {
+                nav.bg-gray-800 a.block {
+                    font-size: 1.2rem; } }
+    /* header logo */
+    nav.bg-gray-800 .eventive__logo-container__logo {
+        width: auto !important;
+        height: 75px !important;
+        max-width: none !important;
+        max-height: none !important;}
+        @media (min-width: 1024px) {
+            nav.bg-gray-800 .eventive__logo-container__logo {
+                max-width: none !important;
+                display: none; } }
+
+/* header logo without padding left */
+    nav div.flex.items-center.justify-between.h-16.px-4 {
+        padding-left: 0px;
+        padding-right: 0px;}
+
+/* login button */
+    nav.bg-gray-800 button {
+        background: transparent;
+        color: #ffffff;
+        border-radius: 0;
+        margin-right: 0.5rem;
+        text-transform: uppercase;
+        font-weight: normal  !important;
+        font-style: normal;
+        line-height: 1 !important;
+        font-size: 1.8rem;
+        padding: 16px 16px 16px 24px ;
+        border-left: 2px solid #fff;
+        border-radius: 0rem !important;
+        transition: all 0.3s; }
+        nav.bg-gray-800 button:hover {
+            background-color: transparent;
+            color: #f996c4;
+            transition: all 0.3s;}
+    nav.bg-gray-800 button.text-gray-400 {
+        border: none;
+        color: #f996c4; 
+        background: transparent;
+        transition: all 0.3s;}
+        nav.bg-gray-800 button.text-gray-400:hover {
+            border: none;
+            color: #ffffff;
+            background: transparent;
+            transition: all 0.3s; }
+
+/* logged button */
+    nav.bg-gray-800 button.max-w-xs.flex.items-center.text-sm.rounded-full {
+        background: transparent;
+        border: none !important; 
+        transition: all 0.3s;}
+        nav.bg-gray-800 button.max-w-xs.flex.items-center.text-sm.rounded-full:hover, nav.bg-gray-800 button.max-w-xs.flex.items-center.text-sm.rounded-full:focus, nav.bg-gray-800 button.max-w-xs.flex.items-center.text-sm.rounded-full:active {
+            box-shadow: none !important; 
+            transition: all 0.3s;}
+        nav.bg-gray-800 button.max-w-xs.flex.items-center.text-sm.rounded-full > span {
+            background: #f996c4;
+            width: 50px;
+            height: 50px;
+            transition: all 0.3s;}
+            nav.bg-gray-800 button.max-w-xs.flex.items-center.text-sm.rounded-full > span > span {
+                color: #000; 
+                font-size: 20px;
+                /*font-family: 'Estrella';*/ }
+        nav.bg-gray-800 div.flex-shrink-0 > span {
+            background: #f996c4;
+            width: 50px;
+            height: 50px;
+            transition: all 0.3s;}
+            nav.bg-gray-800 div.flex-shrink-0 > span > span {
+                color: #000; 
+                font-size: 20px;
+                /*font-family: 'Estrella';*/ }
+
+    nav.bg-gray-800 .origin-top-right .rounded-md.bg-always-white {
+        background: #000;
+        border-radius: 0; }
+        nav.bg-gray-800 .origin-top-right .rounded-md.bg-always-white .text-always-gray-500 {
+            color: #f996c4; }
+        nav.bg-gray-800 .origin-top-right .rounded-md.bg-always-white .text-always-gray-400 {
+            color: #f996c4; }
+        nav.bg-gray-800 .origin-top-right .rounded-md.bg-always-white a {
+            font-size: 1rem; }
+            nav.bg-gray-800 .origin-top-right .rounded-md.bg-always-white a:hover {
+                color: #f996c4 !important; }
+
+/* generel status for ALL eventive buttons */
+.eventive__button {
+    border: 0px solid #f996c4;
+    border-radius: 0rem !important;
+    text-transform: uppercase;
+    color: #f996c4 !important;
+    background: #000;
+    line-height: 1 !important;
+    transition: all 0.5s;}
+    @media (min-width: 768px) {
+            .eventive__button {
+                font-size: 20px; } }
+    .eventive__button:focus {
+        box-shadow: none; }
+    .eventive__button svg {
+        display: none; }
+    .eventive__button:hover {
+        color: #000 !important;
+        background: #f996c4;
+        border-color: #000;
+        transition: all 0.5s;} 
+
+/* bouton watch now */
+a > div.inline-flex.rounded-md.shadow-sm > .eventive__button {
+    background: transparent; 
+    padding: 15px;
+    padding-left: 0px;
+    font-size: 20px;
+    transition: all 0s;}
+    @media (max-width: 768px) {
+            a > div.inline-flex.rounded-md.shadow-sm > .eventive__button {
+                font-size: 18px !important; } }
+    a > div.inline-flex.rounded-md.shadow-sm > .eventive__button:hover {
+        text-transform: lowercase !important;
+        font-size: 266%;
+        padding: 1px 40px 5px 10px;
+        font-family: 'Estrella';
+        color: #f996c4 !important; }
+        @media (max-width: 768px) {
+            a > div.inline-flex.rounded-md.shadow-sm > .eventive__button:hover {
+                font-size: 220% !important; } }
+    a > div.inline-flex.rounded-md.shadow-sm > .eventive__button:focus {
+        border: 0px solid #555961;}
+
+/* bouton learn more and watch now*/
+a > div.inline-flex.rounded-md.shadow-sm {
+    display: inline-block;}
+    a > div.inline-flex.rounded-md.shadow-sm.mr-3.sm\:mr-4 {
+        display: none; !important;}
+
+/* take down the buttons */
+@media (min-width: 641px){
+    div.bg-gray-700 > div.relative.px-4.py-5.sm\:px-6.sm\:py-6.w-full > a {
+        display: none;}}
+
+
+/******** login box ********/
+/* box */
+div[role=dialog] {
+    border: 2px solid #000;
+}
+/* bouton submit */
+.eventive__button[type=submit]{
+    border: 2px solid #000;
+    background-color: #fff;
+    color: #000 !important;}
+    .eventive__button[type=submit]:hover{
+        border: 2px solid #000;
+        background-color: #000;
+        color: #f996c4 !important;}
+
+/* premier texte */
+p.leading-snug.text-always-gray-600.text-sm {
+    color: #000 !important;
+    text-transform: uppercase;
+    font-size: 18px;}
+
+/* email form */
+form > div {
+    box-shadow: none !important;}
+form > div > input {
+    border-radius: 0rem !important;}
+
+/* ou */
+div.my-2.text-center.italic.text-always-gray-600 {
+    color: #000 !important;
+    font-style: normal !important;
+    font-size: 18px;}
+
+/* bouton disabled */
+.eventive__button.eventive__button__disabled, .eventive__button.eventive__button__disabled:hover {
+    background: #969999;
+    color: #e8e9ec !important;
+    border-color: #fff; }
+
+/* header img */
+header {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;}
+    header div {
+        padding-left: 0rem !important;
+        padding-right: 0rem !important;
+        max-width: none !important;}
+
+/* header descr */
+body div.text-gray-100.text-center.bg-gray-700.p-4.rounded-lg.mb-8 {
+    border-radius: 0rem;
+    margin-right: 0rem !important;
+    margin-left: 0rem !important;
+    margin-bottom: 0rem !important;
+    border-top: 2px solid #fff;}
+    @media (min-width: 1024px) {
+            body div.text-gray-100.text-center.bg-gray-700.p-4.rounded-lg.mb-8 {
+                padding: 1.5rem 0rem 1.5rem 0rem; } }
+    /*@media (min-width: 1024px) {
+            body div.text-gray-100.text-center.bg-gray-700.p-4.rounded-lg.mb-8 {
+                padding: 1.5rem 0rem 1.5rem 20px; } }*/
+    body div.text-gray-100.text-center.bg-gray-700.p-4.rounded-lg.mb-8 > div {
+        font-size: 0.9rem;
+        color: #fff;
+        /*text-align: left;*/}
+        @media (min-width: 768px) {
+            body div.text-gray-100.text-center.bg-gray-700.p-4.rounded-lg.mb-8 > div {
+                font-size: 1.2rem;
+                /*padding-left: 12px !important; */} }
+
+/* grande boite main */
+main > div.max-w-7xl.mx-auto.pb-12 {
+    padding-bottom: 0rem;}
+
+/* titles of display sections */
+h2.group {
+    text-transform: uppercase;
+    padding: 1rem 1rem;
+    margin: 0rem;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;}
+    @media (min-width: 768px) {
+            h2.group {
+                padding-left: 2rem !important;
+                padding-right: 2rem !important; } }
+    @media (min-width: 900px) {
+            h2.group{
+                padding-top: 1.5rem !important;
+                padding-bottom: 1.5rem !important;
+                font-size: 2rem; } }
+
+/* slick sliders*/
+.slick-slider {
+    margin: 0rem;
+    /*background-color: #000*/;
+    }
+
+.slick-list {
+    width: 100% !important;
+    }
+
+/*.slick-track {
+    width: 100% !important;}*/
+
+/*.slick-slide {
+    min-width: 50% !important;
+}
+    @media (min-width: 768px) {
+            .slick-slide {
+                min-width: 33.33333% !important; } }
+        @media (min-width: 900px) {
+            .slick-slide {
+                min-width: 25% !important; } }*/
+
+/* formatage des images films */
+main div.relative.bg-gray-700.rounded-md.overflow-hidden.mt-4 {
+    margin-top: 0rem !important;
+    border-radius: 0 ;}
+main div.slick-track img {
+    border-radius: 0;}
+
+.slick-slide div > div.group.p-2 {
+    padding: 0rem;}
+
+/* slick slide for default display
+.slick-slide a > div.h-40 {
+    height: 100% !important;
+    padding-bottom: 40%;}*/
+
+/* poster display */
+.slick-slide a > div.w-40 {
+    height: 100%;
+    width: 100%;
+    background-color: #f996c4;}
+
+.slick-slide a > div.w-40:after {
+    content: "watch now";
+    line-height: 30px;
+    color: #fff;
+    font-family: "Estrella";
+    font-size: 60px;
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 100px;
+    opacity: 0;
+    transition: opacity 1s;
+    text-align: center;
+    padding-top: -30px;}
+
+.slick-slide a > div.w-40:hover {
+    border-radius: 0;
+    z-index: 70;
+    transform: none !important;
+    box-shadow: none !important;
+    overflow: visible !important;}
+
+@media (max-width: 640px){
+    .slick-slide a > div.w-40:after {
+        content: "<3";}}
+
+.slick-slide a > div.w-40:hover:after {
+        opacity: 1;
+        transition: opacity 1s;}
+
+.slick-slide a > div.w-40 img {
+    transition: filter 0.5s, mix-blend-mode 0.5s;}
+
+.slick-slide a > div.w-40:hover img {
+    filter: blur(10px);
+    mix-blend-mode: multiply;
+    transition: filter 0.5s, mix-blend-mode 0.5s;}
+
+/* availability announce */
+.slick-slide span {
+    background-color: #fff;
+    color: #000;
+    top : auto;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    border-radius: 0;
+    font-size: 18px;
+    height: 30px;
+    display: none;}
+
+/* text inside film display box */
+.relative.px-4.py-5 > h2.text-white {
+    color: #f996c4 !important;
+    /*font-family: 'Estrella',sans-serif;*/
+    font-size: 1.6rem;
+    text-transform: uppercase;}
+    @media (min-width: 768px) {
+            .relative.px-4.py-5 > h2.text-white {
+                font-size: 2rem; } }
+
+/* desc of films */
+div.bg-gray-700 > div.relative.px-4.py-5.sm\:px-6.sm\:py-6.w-full > p.text-gray-200 {
+    color: #fff;
+}
+
+/* arrows */
+.slick-slider svg{
+    color: #000;}
+    .slick-slider svg:hover{
+        color: #f996c4;}
+    @media (max-width: 639px) {
+        .slick-slider svg{
+            height: 3rem;}}
+.slick-slider > .cursor-pointer {
+    background: none;}
+/* arrows box for max640px */
+    @media (max-width: 639px) {
+        .slick-slider > .cursor-pointer {
+            display: flex;}}
+
+/* footer png box */
+body div.max-w-7xl.mx-auto.py-6.px-4 {
+    /*border-top: 2px solid #fff*/;
+    background-color: #000 !important;
+    max-width: none !important;}
+    div.max-w-7xl.mx-auto.py-6.px-4 img {
+        max-width: none !important;
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;}
+
+
+/* eventive footer */
+footer {
+    background: #000;}
+    footer select[name=Eventive__LanguageSwitcher__select]{
+        color: #fff;
+    }
+    footer div {
+        color: #ffffff !important;}
+    footer a {
+        font-weight: lighter;
+        color: #fff;}
+
+    footer:after {
+        content: "FdS streaming platform designed & managed by Noé P. Carette <3";
+        color: #f996c4!important;
+        display: block;
+        width: 100%;
+        text-align: center;
+        /*font-family: "Estrella";*/
+        font-size: 10px;}
+
+/*                  film page                  */
+
+/* scrollbar cases */
+.scrollbarred > a {
+    border-radius: 0 !important;
+    padding: 12px;
+    transition: all 0.3s;
+    /*margin-right: 20px;
+    margin-left: 20px;*/}
+    @media (max-width: 900px){
+        .scrollbarred > a {
+            padding:8px;}}
+
+/* scrollbar text */
+.scrollbarred > a > div.text-gray-200 {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bolder !important;
+    transition: all 0.3s;}
+    @media (max-width: 900px){
+        .scrollbarred > a > div.text-gray-200 {
+            font-size: 16px;}}
+
+/* scrollbar selected text */
+.scrollbarred > a.border-gray-600 > div.text-gray-200 {
+    color: #fff;
+}
+
+/* scrollbar unselected case hover */
+.scrollbarred > a.border-gray-700:hover > div.text-gray-200 {
+    color: #f996c4;
+    transition: all 0.3s;
+}
+
+/* scrollbar literally */
+.scrollbarred::-webkit-scrollbar-thumb {
+    background-color: #f996c4 !important;}
+
+/* titre film page*/
+header h2.inline-block.text-gray-400 {
+    display:none;}
+
+header h3 {
+    max-width: 1316px;
+    margin-left: auto;
+    margin-right: auto;
+    /*padding: 16px 16px 36px 36px;*/
+    /*font-family: "Estrella", sans-serif;*/
+    font-size: 40px !important;
+    text-transform: uppercase;
+    padding: 44px 44px 16px 44px;}
+    @media (max-width: 768px) {
+            header h3 {
+            /*padding: 16px 16px 30px 16px;
+            font-size: 70px !important;*/
+            padding: 36px 24px 16px 24px;
+            font-size: 30px !important;} }
+
+main > div > div.sm\:flex.-mx-4 {
+    padding: 0px 20px 0px 20px;
+    max-width: 1316px;
+    margin-left: auto;
+    margin-right: auto;}
+    @media (max-width: 768px) {
+            main > div > div.sm\:flex.-mx-4 {
+            padding: 0px 0px 0px 0px;} }
+
+/* pub */
+/*main div.sm\:w-1\/3.sm\:mt-0.mt-12.px-4.sticky.top-0 > div.mt-12.rounded-lg.overflow-hidden {
+    margin-top: 0;}*/
+@media (max-width: 640px) {
+        main div.sm\:w-1\/3.sm\:mt-0.mt-12.px-4.sticky.top-0 > div.mt-12.rounded-lg.overflow-hidden {
+            display:none;}}
+
+main div.mt-12.rounded-lg.overflow-hidden > img {
+    margin-left: auto;
+    margin-right: auto;
+    /*clip-path:circle(40%);*/}
+    
+
+/* screen */
+div.relative.flex-1.flex.flex-col.min-h-55vw > img,div {
+    border-radius: 0 !important;}
+/* coming soon text on screen */
+div.relative.flex-1.flex.flex-col.min-h-55vw > div.z-20.sm\:absolute {
+    background-color: #fff !important;
+    border: 2px solid #000;
+    top: 0;
+    bottom: auto;}
+    div.relative.flex-1.flex.flex-col.min-h-55vw > div.z-20.sm\:absolute > span {
+        color: #000 !important;
+        text-transform: uppercase;}
+
+/* pay what u can etc */
+main div.mt-6.border-gray-600 > div > div.mb-5.text-gray-300.text-sm.flex.items-center {
+    display: none;}
+
+/* paragraphe descr film */
+div > div.tenant-injected-html.text-gray-300 {
+        line-height: 20px;}
+        @media (min-width: 900px){
+            div > div.tenant-injected-html.text-gray-300 {
+                font-size: 20px;
+                line-height: 25px;}}
+
+@media (min-width: 900px){
+            div > div.tenant-injected-html.mb-3.text-gray-300 {
+                margin-bottom: 300px;}}
+
+/* sous-paragraphe descr shorts */
+/* quand l'espace est assez grand */
+div > div.tenant-injected-html.mb-2.text-gray-300 {
+            font-size: 14px;
+            line-height: 18px;}
+        /* quand l'espace est assez grand */
+            @media (min-width: 900px){
+                div > div.tenant-injected-html.mb-2.text-gray-300 {
+                    position: absolute;
+                    left: 67.5%;
+                    top: 600px;
+                    font-size: 16px;
+                    padding-right: 3.5%;
+                    line-height: 18px;}}
+            /* quand max.width atteint */
+                    @media (min-width: 1316px){
+                            div > div.tenant-injected-html.mb-2.text-gray-300 {
+                                padding-right: 6%;}}
+                                @media (min-width: 1440px){
+                                    div > div.tenant-injected-html.mb-2.text-gray-300 {
+                                        left: 66%;
+                                        right: 6%;
+                                        width: 470px;}}
+                                        @media (min-width: 1900px){
+                                            div > div.tenant-injected-html.mb-2.text-gray-300 {
+                                                left: 62%;
+                                                right: 6%;
+                                                width: 500px;}}
+
+/* outer box of text descr */
+div.sm\:w-2\/3.px-4 > div.hidden.sm\:block.mt-6.border-gray-600.px-4 {
+    padding: 0px 2px;}
+
+/********* search page *********/
+input#search {
+    background-color: #000 !important;
+    color: #fff !important;
+    border-radius: 0 !important;
+    border-top: 2px solid #fff !important;
+    border-bottom: 2px solid #fff !important;
+    border-left: none !important;
+    border-right:none !important;
+    line-height: 2.5 !important;}
+
+
+/********** prog fermée fr ************/
+html[lang=fr] div.flex.flex-col.justify-center.items-center > div.text-center.text-xl.text-gray-300 {
+    display: none;}
+
+html[lang=fr] div.max-w-7xl.mx-auto.pb-12.px-4.sm\:px-6.lg\:px-8 > div > div.flex.flex-col.justify-center.items-center:before {
+    content: "Programmation 2023 clôturée.";
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.25rem;}
+
+html[lang=fr] div.max-w-7xl.mx-auto.pb-12.px-4.sm\:px-6.lg\:px-8 > div > div.flex.flex-col.justify-center.items-center:after {
+    content: "Nous sommes ouvert·e·x·s à la collaboration pour la diffusions de films sur notre plateforme streaming. Pour toute demande de collaboration, contactez Noé : noe@fdsfestival.ch";
+    display: block;
+    width: 60%;
+    text-align: center;
+    font-size: 1rem;}
+
+/********** prog fermée en ************/
+html[lang=en] div.flex.flex-col.justify-center.items-center > div.text-center.text-xl.text-gray-300 {
+    display: none;}
+
+html[lang=en] div.max-w-7xl.mx-auto.pb-12.px-4.sm\:px-6.lg\:px-8 > div > div.flex.flex-col.justify-center.items-center:before {
+    content: "The 2023 programme is now closed.";
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.25rem;}
+
+html[lang=en] div.max-w-7xl.mx-auto.pb-12.px-4.sm\:px-6.lg\:px-8 > div > div.flex.flex-col.justify-center.items-center:after {
+    content: "We are open to collaborations for the broadcasting of films on our streaming platform. For all collaboration requests, please contact Noé: noe@fdsfestival.ch";
+    display: block;
+    width: 60%;
+    text-align: center;
+    font-size: 1rem;}
