@@ -486,14 +486,20 @@ footer {
         color: #fff;}
 
     footer:after {
-        content: "Cette plateforme est conçue et gérée par Noé P. Carette et est un projet à l’initiative de la FdS. Pour toute demande de collaboration, contactez Noé : noe@fdsfestival.ch.";
+        content: "This platform is designed and managed by Noé P. Carette and is a project initiated by the FdS. For any collaboration requests, please contact Noé: noe@fdsfestival.ch.";
         color: #f996c4!important;
         display: block;
         width: 100%;
         padding-right: 10px;
         padding-left: 10px;
+        padding-top: 10px;
         text-align: center;
-        font-size: 0.8rem;}
+        font-size: 0.8rem;
+        line-height: 1.1rem;}
+
+    html[lang=fr] footer:after {
+        content: "Cette plateforme est conçue et gérée par Noé P. Carette et est un projet à l’initiative de la FdS. Pour toute demande de collaboration, contactez Noé : noe@fdsfestival.ch.";
+    }
 
 /*                  film page                  */
 
