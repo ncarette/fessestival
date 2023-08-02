@@ -486,13 +486,14 @@ footer {
         color: #fff;}
 
     footer:after {
-        content: "FdS streaming platform designed & managed by Noé P. Carette <3";
+        content: "Cette plateforme est conçue et gérée par Noé P. Carette et est un projet à l’initiative de la FdS. Pour toute demande de collaboration, contactez Noé : noe@fdsfestival.ch.";
         color: #f996c4!important;
         display: block;
         width: 100%;
+        padding-right: 10px;
+        padding-left: 10px;
         text-align: center;
-        /*font-family: "Estrella";*/
-        font-size: 10px;}
+        font-size: 0.8rem;}
 
 /*                  film page                  */
 
@@ -654,14 +655,14 @@ html[lang=fr] div.flex.flex-col.justify-center.items-center > div.text-center.te
     display: none;}
 
 html[lang=fr] div.max-w-7xl.mx-auto.pb-12.px-4.sm\:px-6.lg\:px-8 > div > div.flex.flex-col.justify-center.items-center:before {
-    content: "Programmation 2023 clôturée.";
+    content: "21-24.09.2023";
     display: block;
     width: 100%;
     text-align: center;
     font-size: 1.25rem;}
 
 html[lang=fr] div.max-w-7xl.mx-auto.pb-12.px-4.sm\:px-6.lg\:px-8 > div > div.flex.flex-col.justify-center.items-center:after {
-    content: "Nous sommes ouvert·e·x·s à la collaboration pour la diffusions de films sur notre plateforme streaming. Pour toute demande de collaboration, contactez Noé : noe@fdsfestival.ch";
+    content: "ça arrive bientôt...";
     display: block;
     width: 60%;
     text-align: center;
@@ -672,14 +673,14 @@ html[lang=en] div.flex.flex-col.justify-center.items-center > div.text-center.te
     display: none;}
 
 html[lang=en] div.max-w-7xl.mx-auto.pb-12.px-4.sm\:px-6.lg\:px-8 > div > div.flex.flex-col.justify-center.items-center:before {
-    content: "The 2023 programme is now closed.";
+    content: "21-24.09.2023";
     display: block;
     width: 100%;
     text-align: center;
     font-size: 1.25rem;}
 
 html[lang=en] div.max-w-7xl.mx-auto.pb-12.px-4.sm\:px-6.lg\:px-8 > div > div.flex.flex-col.justify-center.items-center:after {
-    content: "We are open to collaborations for the broadcasting of films on our streaming platform. For all collaboration requests, please contact Noé: noe@fdsfestival.ch";
+    content: "it's coming soon...";
     display: block;
     width: 60%;
     text-align: center;
