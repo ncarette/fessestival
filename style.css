@@ -45,7 +45,8 @@ body {
 main > div.max-w-7xl.mx-auto.pb-12.px-4 {
     padding-left: 0rem;
     padding-right: 0rem;
-    max-width: none !important;}
+    max-width: none !important;
+    min-height: 0;}
 
 /* enleve tous les radius */
 div.rounded-lg {
