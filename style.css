@@ -604,30 +604,30 @@ main div.mt-6.border-gray-600 > div > div.mb-5.text-gray-300.text-sm.flex.items-
 
 /* paragraphe descr film */
 div > div.tenant-injected-html.text-gray-300 {
-        line-height: 1.25rem;}
+        line-height: 1.5rem;}
         @media (min-width: 900px){
             div > div.tenant-injected-html.text-gray-300 {
-                font-size: 1.25rem;
-                line-height: 1.25rem;}}
+                font-size: 1.5rem;
+                line-height: 1.75rem;}}
 
 @media (min-width: 900px){
             div > div.tenant-injected-html.mb-3.text-gray-300 {
-                margin-bottom: 6.25rem;}}
+                margin-bottom: 12rem;}}
 
 /* sous-paragraphe descr shorts */
 /* quand l'espace est assez grand */
 div > div.tenant-injected-html.mb-2.text-gray-300 {
-            font-size: 0.875rem;
-            line-height: 1.125rem;}
+            font-size: 1rem;
+            line-height: 1.25rem;}
         /* quand l'espace est assez grand */
             @media (min-width: 900px){
                 div > div.tenant-injected-html.mb-2.text-gray-300 {
                     position: absolute;
                     left: 67.5%;
-                    top: 37.5rem;
-                    font-size: 1rem;
+                    top: 600px;
+                    font-size: 1.25rem;
                     padding-right: 3.5%;
-                    line-height: 1.125rem;}}
+                    line-height: 1.5rem;}}
             /* quand max.width atteint */
                     @media (min-width: 1316px){
                             div > div.tenant-injected-html.mb-2.text-gray-300 {
