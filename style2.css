@@ -36,10 +36,10 @@ html, body {
         html, body {
             cursor: url(../content/cursor-resized.png) 70 40, auto; } }
 body {
-    padding-top: 4.188rem;}
+    padding-top: 67px;}
     @media (min-width: 1024px) {
         body {
-            padding-top: 4.986rem; } }
+            padding-top: 79.78px; } }
 
 /* main */
 main > div.max-w-7xl.mx-auto.pb-12.px-4 {
@@ -108,7 +108,7 @@ nav.bg-gray-800 {
     /* header logo */
     nav.bg-gray-800 .eventive__logo-container__logo {
         width: auto !important;
-        height: 4.688rem !important;
+        height: 75px !important;
         max-width: none !important;
         max-height: none !important;}
         @media (min-width: 1024px) {
@@ -132,7 +132,7 @@ nav.bg-gray-800 {
         font-style: normal;
         line-height: 1 !important;
         font-size: 1.8rem;
-        padding: 1rem 1rem 1rem 1.5rem ;
+        padding: 16px 16px 16px 24px ;
         border-left: 2px solid #fff;
         border-radius: 0rem !important;
         transition: all 0.3s; }
@@ -161,21 +161,21 @@ nav.bg-gray-800 {
             transition: all 0.3s;}
         nav.bg-gray-800 button.max-w-xs.flex.items-center.text-sm.rounded-full > span {
             background: #f996c4;
-            width: 3.125rem;
-            height: 3.125rem;
+            width: 50px;
+            height: 50px;
             transition: all 0.3s;}
             nav.bg-gray-800 button.max-w-xs.flex.items-center.text-sm.rounded-full > span > span {
                 color: #000; 
-                font-size: 1.25rem;
+                font-size: 20px;
                 /*font-family: 'Estrella';*/ }
         nav.bg-gray-800 div.flex-shrink-0 > span {
             background: #f996c4;
-            width: 3.125rem;
-            height: 3.125rem;
+            width: 50px;
+            height: 50px;
             transition: all 0.3s;}
             nav.bg-gray-800 div.flex-shrink-0 > span > span {
                 color: #000; 
-                font-size: 1.25rem;
+                font-size: 20px;
                 /*font-family: 'Estrella';*/ }
 
     nav.bg-gray-800 .origin-top-right .rounded-md.bg-always-white {
@@ -201,7 +201,7 @@ nav.bg-gray-800 {
     transition: all 0.5s;}
     @media (min-width: 768px) {
             .eventive__button {
-                font-size: 1.25rem; } }
+                font-size: 20px; } }
     .eventive__button:focus {
         box-shadow: none; }
     .eventive__button svg {
@@ -215,17 +215,17 @@ nav.bg-gray-800 {
 /* bouton watch now */
 a > div.inline-flex.rounded-md.shadow-sm > .eventive__button {
     background: transparent; 
-    padding: 0.938rem;
+    padding: 15px;
     padding-left: 0px;
-    font-size: 1.25rem;
+    font-size: 20px;
     transition: all 0s;}
     @media (max-width: 768px) {
             a > div.inline-flex.rounded-md.shadow-sm > .eventive__button {
-                font-size: 1.125rem !important; } }
+                font-size: 18px !important; } }
     a > div.inline-flex.rounded-md.shadow-sm > .eventive__button:hover {
         text-transform: lowercase !important;
         font-size: 266%;
-        padding: 0.063rem 2.5rem 0.313rem 0.625rem;
+        padding: 1px 40px 5px 10px;
         font-family: 'Estrella';
         color: #f996c4 !important; }
         @media (max-width: 768px) {
@@ -265,7 +265,7 @@ div[role=dialog] {
 p.leading-snug.text-always-gray-600.text-sm {
     color: #000 !important;
     text-transform: uppercase;
-    font-size: 1.125rem;}
+    font-size: 18px;}
 
 /* email form */
 form > div {
@@ -277,7 +277,7 @@ form > div > input {
 div.my-2.text-center.italic.text-always-gray-600 {
     color: #000 !important;
     font-style: normal !important;
-    font-size: 1.125rem;}
+    font-size: 18px;}
 
 /* bouton disabled */
 .eventive__button.eventive__button__disabled, .eventive__button.eventive__button__disabled:hover {
@@ -383,20 +383,20 @@ main div.slick-track img {
 
 .slick-slide a > div.w-40:after {
     content: "stream";
-    line-height: 1.185rem;
+    line-height: 30px;
     color: #fff;
     font-family: "Estrella";
-    font-size: 3.75rem;
+    font-size: 60px;
     position: absolute; 
     left: 0; 
     right: 0; 
     margin-left: auto; 
     margin-right: auto; 
-    width: 6.25rem;
+    width: 100px;
     opacity: 0;
     transition: opacity 1s;
     text-align: center;
-    padding-top: -1.875px;}
+    padding-top: -30px;}
 
 .slick-slide a > div.w-40:hover {
     border-radius: 0;
@@ -430,8 +430,8 @@ main div.slick-track img {
     right: 0;
     width: 100%;
     border-radius: 0;
-    font-size: 1.125rem;
-    height: 1.875rem;
+    font-size: 18px;
+    height: 30px;
     display: none;}
 
 /* text inside film display box */
@@ -493,9 +493,9 @@ footer {
         color: #f996c4!important;
         display: block;
         width: 100%;
-        padding-right: 0.625rem;
-        padding-left: 0.625rem;
-        padding-top: 0.625rem;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 10px;
         text-align: center;
         font-size: 0.8rem;
         line-height: 1.1rem;}
@@ -509,24 +509,24 @@ footer {
 /* scrollbar cases */
 .scrollbarred > a {
     border-radius: 0 !important;
-    padding: 0.75rem;
+    padding: 12px;
     transition: all 0.3s;
     /*margin-right: 20px;
     margin-left: 20px;*/}
     @media (max-width: 900px){
         .scrollbarred > a {
-            padding:0.5rem;}}
+            padding:8px;}}
 
 /* scrollbar text */
 .scrollbarred > a > div.text-gray-200 {
     color: #000;
     text-transform: uppercase;
-    font-size: 1.25rem;
+    font-size: 20px;
     font-weight: bolder !important;
     transition: all 0.3s;}
     @media (max-width: 900px){
         .scrollbarred > a > div.text-gray-200 {
-            font-size: 1rem;}}
+            font-size: 16px;}}
 
 /* scrollbar selected text */
 .scrollbarred > a.border-gray-600 > div.text-gray-200 {
@@ -553,18 +553,18 @@ header h3 {
     margin-right: auto;
     /*padding: 16px 16px 36px 36px;*/
     /*font-family: "Estrella", sans-serif;*/
-    font-size: 2.5rem !important;
+    font-size: 40px !important;
     text-transform: uppercase;
-    padding: 2.75rem 2.75rem 1rem 2.75rem;}
+    padding: 44px 44px 16px 44px;}
     @media (max-width: 768px) {
             header h3 {
             /*padding: 16px 16px 30px 16px;
             font-size: 70px !important;*/
-            padding: 2.25rem 1.5rem 1rem 1.5rem;
-            font-size: 1.875rem !important;} }
+            padding: 36px 24px 16px 24px;
+            font-size: 30px !important;} }
 
 main > div > div.sm\:flex.-mx-4 {
-    padding: 0rem 1.25rem 0rem 1.25rem;
+    padding: 0px 20px 0px 20px;
     max-width: 1316px;
     margin-left: auto;
     margin-right: auto;}
@@ -604,30 +604,30 @@ main div.mt-6.border-gray-600 > div > div.mb-5.text-gray-300.text-sm.flex.items-
 
 /* paragraphe descr film */
 div > div.tenant-injected-html.text-gray-300 {
-        line-height: 1.25rem;}
+        line-height: 20px;}
         @media (min-width: 900px){
             div > div.tenant-injected-html.text-gray-300 {
-                font-size: 1.25rem;
-                line-height: 1.25rem;}}
+                font-size: 20px;
+                line-height: 25px;}}
 
 @media (min-width: 900px){
             div > div.tenant-injected-html.mb-3.text-gray-300 {
-                margin-bottom: 6.25rem;}}
+                margin-bottom: 100px;}}
 
 /* sous-paragraphe descr shorts */
 /* quand l'espace est assez grand */
 div > div.tenant-injected-html.mb-2.text-gray-300 {
-            font-size: 0.875rem;
-            line-height: 1.125rem;}
+            font-size: 14px;
+            line-height: 18px;}
         /* quand l'espace est assez grand */
             @media (min-width: 900px){
                 div > div.tenant-injected-html.mb-2.text-gray-300 {
                     position: absolute;
                     left: 67.5%;
-                    top: 37.5rem;
-                    font-size: 1rem;
+                    top: 600px;
+                    font-size: 16px;
                     padding-right: 3.5%;
-                    line-height: 1.125rem;}}
+                    line-height: 18px;}}
             /* quand max.width atteint */
                     @media (min-width: 1316px){
                             div > div.tenant-injected-html.mb-2.text-gray-300 {
